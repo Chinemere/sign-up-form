@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-image:linear-gradient(to right, #013082, #21B1CB);
     font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -5,48 +8,65 @@ body{
 }
 
 .div-container{
-    width: 400px;
-    height: 500px;
+    /* width: 400px;
+    height: 500px; */
+    padding: 80px;
+    padding-right: 150px;
+    padding-left: 150px;
     background-color: #032766;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    margin-top: 50px ;
+    margin-bottom: 50px;
 }
 
 #form-check{
-    margin-left:50px;
-    margin-top: -20px;
+    margin-left:-15px;
+    margin-top: -5px;
+    font-size: 13px;
 }
 
-#text-right{
-    margin-right: 50px;
-    margin-top: -10px;
-    font-size: 5px;
+.text-right{
+    font-size: 10px;
+    margin-right: -40px;
+    margin-top: -5px;
+}
+
+.form-control-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control{
+    width: 200%;
+    text-align: center;
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-left: 70px;
+    padding-right: 70px;
+   
 }
 
 #btn{
-    width: 73%;
-    padding: 5px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 20px;
 }
 .social{
     width: 100%;
-    /* padding: 5px; */
     
 }
 
-/* #fb{
-    margin-left: 45px;
-    padding-left: 5px;
-
-} */
-/* #go{
-    margin-left: 5px;
-} */
-
 #login-with{
     margin-top: 50px;
+    word-spacing: 3px;
+    font-weight: bolder;
 }
 
 #main-content{
     
-    min-height: 100%;
+    min-width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -68,3 +88,61 @@ font-weight: bolder;
     margin-top: 5px;
     visibility: collapse;
 }
+
+@media only screen and (max-width:600px){
+    .div-container{
+        /* width: 500px;
+        height: 600px; */
+        padding: 70px;
+        background-color: #032766;
+    }
+
+
+    .form-control-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .form-control{
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 70px;
+        padding-right: 70px;
+       
+    }
+
+    .text-right{
+        font-size: 10px;
+        margin-right: 3px;
+        margin-top: -5px;
+    }
+    
+    
+
+}
+
+@media only screen and (max-width:450px){
+    .div-container{
+        padding: 20px;
+        background-color: #032766;
+       
+        
+    }
+    
+}
+ @media only screen and (max-width:360px){
+    .div-container{
+        padding: 35px;
+        background-color: #032766;
+        
+    }
+    body{
+        padding: 40px;
+    }
+   
+} 
+
